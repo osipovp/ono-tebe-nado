@@ -35,13 +35,14 @@
 }
 
 .header__logo {
-  display: block;
+  display: flex;
   justify-self: center;
   width: 148px;
   height: 105px;
 }
 
 .header__logo-image {
+  object-fit: contain;
 }
 
 .address {
@@ -50,7 +51,7 @@
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 24.3px;
+  line-height: 135%;
 }
 
 .header__address {
@@ -58,6 +59,21 @@
 
 .cover {
   padding: 0 9px 13px 9px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+}
+
+.cover {
+}
+
+.overlay {
+}
+
+.cover__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .lots {
