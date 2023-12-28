@@ -26,6 +26,7 @@
 
 .header__link_active {
   text-decoration: none;
+  pointer-events: none;
 }
 
 .header__links-list-item_no-bullit {
@@ -151,7 +152,7 @@
 }
 
 .lots {
-  padding: 163px 33px 179px 33px;
+  padding: 163px 33px 174px 33px;
 }
 
 .lots__heading {
@@ -185,20 +186,17 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
@@ -220,7 +218,6 @@
 }
 
 .card__text {
-  position: absolute;
   bottom: 0;
   z-index: 1;
   padding: 0 35px 46px 39px;
@@ -232,20 +229,21 @@
 
 .lots__look-more-link {
   display: block;
-  padding: 29px 0 0 39px;
+  margin: 29px 0 0 39px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
+  max-width: fit-content;
 }
 
 .about {
   display: grid;
   column-gap: 25px;
-  padding: 0 21px 179px 33px;
-  grid-template: auto auto auto / 328px auto;
+  padding: 0 21px 178px 33px;
+  grid-template-columns: 328px auto;
 }
 
 .about__logo {
@@ -260,22 +258,22 @@
   padding: 61px 44px 62px 45px;
 }
 
-.about__title {
-  align-self: center;
+.about__text-column {
   color: #000;
+}
+
+.about__title {
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+  margin-bottom: 100px;
+  margin-top: 97px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  grid-column: 2;
-  grid-row: 2;
   gap: 25px;
-  padding-top: 7px;
-  color: #000;
   font-weight: 400;
   font-size: 20px;
 }
@@ -318,6 +316,7 @@
 
 .footer__menu-link_active {
   text-decoration: none;
+  pointer-events: none;
 }
 
 .footer__social-list {
